@@ -1,7 +1,4 @@
-# Credit Dataset #
-# Nicholas Wright #
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~#DATA PREPARATION#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Preperation #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 #install.packages("dplyr")
 library(plyr)
@@ -139,3 +136,17 @@ write.csv(gcc,"Clean_Master.csv", row.names = FALSE)
 write.csv(Goodgcc,"Clean_Master_Good.csv", row.names = FALSE)
 write.csv(Badgcc,"Clean_Master_Bad.csv", row.names = FALSE)
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Preperation #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+ Split Data into Training and Test sets 
+
+
+# Apriori 
+
+# Naive Bayes
+
+# Decision Tree
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Modelling #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# Modelling 
