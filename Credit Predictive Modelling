@@ -149,4 +149,5 @@ write.csv(Badgcc,"Clean_Master_Bad.csv", row.names = FALSE)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Modelling #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-# Modelling 
+# Shift to python
+
