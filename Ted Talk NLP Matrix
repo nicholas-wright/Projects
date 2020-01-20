@@ -72,7 +72,7 @@ get.tf.idf.weights <- function(tf.vec) {
 ```
 
 ### Declaring weights (TF-IDF variants)
-# There are three TF-IDF variants that can be used for different document sizes 
+# There are three TF-IDF variants that can be used for different  and document sizes.
 ```{r}
 
 # Variant 1
