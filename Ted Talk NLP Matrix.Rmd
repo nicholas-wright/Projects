@@ -41,8 +41,8 @@ clean.corpus <- tm_map(clean.corpus, stemDocument)
 
 # removeWords and stopwords, combine to remove all of the commonly used words in the documents (ex. the, and, is) this allows the 
 # queries to focuses the search on important words. Allowing for a more efficent search.The third technique used was the stemDocument
-function, this is necessary for cleaning and processing text as it reduces words to their stem by removing prefixes and suffixes.
-Therefore allowing more comprehensive and faster results to queries (ex. ability turns into abil). 
+# function, this is necessary for cleaning and processing text as it reduces words to their stem by removing prefixes and suffixes.
+# Therefore allowing more comprehensive and faster results to queries (ex. ability turns into abil). 
 ```
 
 ### Creating Term Document Matrix
@@ -120,12 +120,12 @@ similarity.matrix <- sim2(t(tfidf.matrix), method = 'cosine')
 heatmap(similarity.matrix)
 ```
 
-##Showing the Results
+### View Results
 ```{r}
 sort(similarity.matrix["Query", ], decreasing = TRUE)[1:10]
 ```
 
-## Please use the following chunck to comment and conclude after conducting your comparative analyses
+### Comparative analyses
 ```{r}
 # Original 
 # Doc99       Query       Doc47       Doc97       Doc58       Doc36       Doc91       Doc52       Doc14 
