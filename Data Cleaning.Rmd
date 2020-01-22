@@ -8,19 +8,19 @@ library(dplyr)
 
 # Import file into R as dataframe
 ```{r}
-germancredit <- data.frame(read.csv("german_credit.csv"), stringsAsFactors = FALSE)
+credit_profiles <- data.frame(read.csv("german_credit.csv"), stringsAsFactors = FALSE)
 ```
 
 # View dataframe and summary
 
 ```{r}
-germancredit
-summary(germancredit)
+credit_profiles
+summary(credit_profiles)
 ```
 
 # Make new working data frame
 ```{r}
-gcc <- germancredit
+gcc <- credit_profiles
 ```
 
 # Get classes for all data
