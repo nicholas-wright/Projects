@@ -138,8 +138,11 @@ write.csv(Badgcc,"Clean_Master_Bad.csv", row.names = FALSE)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Preperation #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
- Split Data into Training and Test sets 
+# Shift to python
 
+# Split Data into Training and Test sets 
+
+train, test = train_test_split(Master_Set, train_size=0.7, random_state=1)
 
 # Apriori 
 
@@ -149,5 +152,6 @@ write.csv(Badgcc,"Clean_Master_Bad.csv", row.names = FALSE)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~# Data Modelling #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-# Shift to python
+import pandas as pd
+import numpy as np
 
