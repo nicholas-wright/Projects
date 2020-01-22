@@ -17,4 +17,4 @@ Files: https://github.com/nicholas-wright/Projects/blob/master/Ted%20Talk%20NLP%
 
 A general-purpose python web scraper utilizing the scrapy package. The original use was to collect MLS data for a predictive model. 
 
-Files:https://github.com/nicholas-wright/Projects/blob/master/Web%20Scraper.ipynb
+Files: https://github.com/nicholas-wright/Projects/blob/master/Web%20Scraper.ipynb
