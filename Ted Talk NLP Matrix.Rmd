@@ -33,6 +33,7 @@ my.corpus
 clean.corpus <- tm_map(my.corpus, removePunctuation, ucp = TRUE)
 clean.corpus <- tm_map(clean.corpus, removeWords, stopwords(kind = "en"))
 clean.corpus <- tm_map(clean.corpus, stemDocument)
+
 # removePuncutation was used to remove all punctuation. This allows for the amount of bags needed to classify words be minimalized, 
 # allowing all similar words to be classified togethered (ex. Hello! and hello, will be different unless punctuation is removed). 
 # This minimizes the amount of spaces that need to be searched. Making the document comparison more efficent.Ucp was changed to true
@@ -51,7 +52,7 @@ term.doc.matrix <- TermDocumentMatrix(clean.corpus)
 inspect(term.doc.matrix[1:10,1:10])
 ```
 
-### Converting the generated TDM into a matrix and displaying the first 6 rows and the dimensions of the matrix
+### Converting the TDM into a matrix and displaying the head and dimensions.
 ```{r}
 term.doc.matrix <- as.matrix(term.doc.matrix)
 head(term.doc.matrix)
@@ -72,7 +73,7 @@ get.tf.idf.weights <- function(tf.vec) {
 ```
 
 ### Declaring weights (TF-IDF variants)
-# There are three TF-IDF variants that can be used for different  and document sizes.
+# There are three TF-IDF variants that can be used for different word weighting and document sizes.
 ```{r}
 
 # Variant 1
@@ -146,7 +147,7 @@ sort(similarity.matrix["Query", ], decreasing = TRUE)[1:10]
 
 # Comparison
 # Variant 1 
-# The function used is identical to the orginal function, this means that the results are identical.
+# Provides baseline. Most commonly used version of TF-IDF.
 # Variant 2
 # By adding log to the number of occurances this allows smaller documents to carry more weight making them closer in weight to larger 
 # documents, thus allowing rarer words to be more prevlant. While adding 1 to both TF and IDF makes values inherently worth 
