@@ -23,4 +23,4 @@ Files: https://github.com/nicholas-wright/Projects/blob/master/Web%20Scraper.ipy
 
 An example of SQL queries for informative purposes. The original document was made to practice SQL Queries. 
 
-Files: 
+Files: https://github.com/nicholas-wright/Projects/tree/master/SQL%20Examples
