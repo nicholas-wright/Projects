@@ -21,6 +21,6 @@ Files: https://github.com/nicholas-wright/Projects/blob/master/Web%20Scraper.ipy
 
 ### SQL Query examples
 
-An example of SQL queries for informative purposes. The original document was made to practice SQL Queries. 
+An example of SQL queries for informative purposes. The original document was made to practice SQL Queries. The databases are small example datasbases, therefore there is no need for connection to an external database. 
 
 Files: https://github.com/nicholas-wright/Projects/tree/master/SQL%20Examples
