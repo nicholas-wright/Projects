@@ -13,3 +13,6 @@ LOAD DATA LOCAL INFILE '/Users/wrigh/Downloads/instacart_2017_05_01/departments.
 create table aisles (aisle_id int, aisle VARCHAR(255));
 LOAD DATA LOCAL INFILE '/Users/wrigh/Downloads/instacart_2017_05_01/aisles.csv' INTO TABLE aisles FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
 show tables;
+# Test Database
+select * from aisles;         
+# Export dataset -> mysqldump -u root -p instacart > instacart.sql
