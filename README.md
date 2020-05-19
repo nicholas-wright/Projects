@@ -24,3 +24,9 @@ Files: https://github.com/nicholas-wright/Projects/blob/master/Web%20Scraper.ipy
 An example of SQL queries for informative purposes. The original document was made to practice SQL Queries. The databases are small example datasbases, therefore there is no need for connection to an external database. 
 
 Files: https://github.com/nicholas-wright/Projects/tree/master/SQL%20Examples
+
+### Database Creation
+
+This database demo is based on the open source instacart dataset found at https://www.instacart.com/datasets/grocery-shopping-2017. 
+
+Files: https://github.com/nicholas-wright/Projects/blob/master/Instacart%20Database%20Creation.sql
