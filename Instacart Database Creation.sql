@@ -1,3 +1,5 @@
+#Untar file -> tar zxvf instacart_online_grocery_shopping_2017_05_01.tar.gz
+#Create database, tables, foreign keys and import data.
 create database instacart;
 use instacart;
 create table orders (order_id bigint, user_id int, order_number int, order_dow int, order_hour int, day_since_last_order int);  
@@ -13,6 +15,6 @@ LOAD DATA LOCAL INFILE '/Users/wrigh/Downloads/instacart_2017_05_01/departments.
 create table aisles (aisle_id int, aisle VARCHAR(255));
 LOAD DATA LOCAL INFILE '/Users/wrigh/Downloads/instacart_2017_05_01/aisles.csv' INTO TABLE aisles FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
 show tables;
-# Test Database
+#Test Database
 select * from aisles;         
-# Export dataset -> mysqldump -u root -p instacart > instacart.sql
+#Export dataset -> mysqldump -u root -p instacart > instacart.sql
